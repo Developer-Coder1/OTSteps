@@ -1,0 +1,28 @@
+:root {
+  --navy: #1f3a5f;
+  --orange: #f28c28;
+  --sky: #eaf2fb;
+  --bg: #fafaf7;
+  --text: #2b2b2b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito";
+  font-size: 17px;
+  line-height: 1.6;
+  background-color:  var(--bg);
+}
+
+header{
+  display: flex;
+  font-family: "Poppins";
+  max-width: 1100px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
