@@ -1,0 +1,217 @@
+<!doctype html>
+
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta name="description" content="" />
+    <title>OTSteps</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="left">
+        <img class="logo" src="/images/otsteps-logo.png" alt="OTSteps logo" />
+      </div>
+
+      <div class="middle" id="main-menu">
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/services.html">Services</a></li>
+            <li><a href="/pages/resources.html">Useful Resources</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="left contact">
+        <a href="tel:+61415784405" class="btn">Call</a>
+        <button class="menu-toggle"></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Contact Us</h1>
+          <p class="section-intro">
+            Get started today. We’d love to hear from you.
+          </p>
+        </div>
+      </section>
+
+      <section class="service-block">
+        <div class="container contact-grid">
+          <div>
+            <h2>Send an enquiry</h2>
+
+            <div data-fs-success class="form-success"></div>
+            <div data-fs-error class="form-error"></div>
+
+            <form
+              id="enquiry-form"
+              class="enquiry-form"
+              action="https://formspree.io/f/xqpqeyjo"
+              method="POST"
+            >
+              <label for="name">Full name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                autocomplete="name"
+                data-fs-field
+              />
+              <span data-fs-error="name" class="field-error"></span>
+
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+                data-fs-field
+              />
+              <span data-fs-error="email" class="field-error"></span>
+
+              <label for="phone">Phone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                autocomplete="tel"
+                data-fs-field
+              />
+              <span data-fs-error="phone" class="field-error"></span>
+
+              <label for="message">Your message (optional)</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                data-fs-field
+              ></textarea>
+              <span data-fs-error="message" class="field-error"></span>
+
+              <!-- spam trap: real people never see or fill this -->
+              <input
+                type="text"
+                name="_gotcha"
+                tabindex="-1"
+                autocomplete="off"
+                class="hp"
+              />
+
+              <p class="form-note">
+                Please don’t include private health details in this form. We’ll
+                discuss those when we speak.
+              </p>
+              <button type="submit" class="btn-primary" data-fs-submit-btn>
+                Send enquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-block alt">
+        <div class="container">
+          <h2 class="section-title">Areas we service</h2>
+          <ul class="areas">
+            <li>Sydney CBD</li>
+            <li>Eastern Suburbs</li>
+            <li>Inner West</li>
+            <li>North Shore</li>
+            <li>Northern Beaches</li>
+            <li>Hills District</li>
+            <li>South West Sydney</li>
+            <li>Western Sydney</li>
+            <li>Southern Sydney</li>
+            <li>Illawarra Shoalhaven</li>
+            <li>Remote NSW</li>
+            <li>Mobile therapy (all states)</li>
+            <li>Telehealth (all states)</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <!-- logo + tagline -->
+          <!-- TODO: hours from uncle -->
+          <div class="white-bg">
+            <img src="/images/otsteps-logo.png" alt="OTSteps logo" />
+          </div>
+          <p>Reaching Beyond Traditional Therapies</p>
+        </div>
+
+        <div>
+          <h3>Hours</h3>
+          <p>Mon to Sat: 8:00am to 6:00pm</p>
+          <p>Sunday: on request</p>
+          <p>Sydney, Australia</p>
+        </div>
+
+        <div>
+          <h3>Quick links</h3>
+          <nav>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/pages/about.html">About</a></li>
+              <li><a href="/pages/services.html">Services</a></li>
+              <li><a href="/pages/resources.html">Useful Resources</a></li>
+              <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>Phone Number: <a href="tel:+61415784405">+61415784405 </a></p>
+          <p>Email: <a href="mailto:info@otsteps.com">info@otsteps.com</a></p>
+          <p>
+            <a
+              href="https://www.instagram.com/occuptherapysteps/"
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            >
+            ·
+            <a
+              href="https://www.facebook.com/share/zeHhTu6EN2oAXvQj/"
+              target="_blank"
+              rel="noopener"
+              >Facebook</a
+            >
+          </p>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2026 OTSTEPS</p>
+    </footer>
+    <script>
+      window.formspree =
+        window.formspree ||
+        function () {
+          (formspree.q = formspree.q || []).push(arguments);
+        };
+      formspree("initForm", {
+        formElement: "#enquiry-form",
+        formId: "xqpqeyjo",
+      });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+    <script src="/js/main.js" defer></script>
+  </body>
+</html>

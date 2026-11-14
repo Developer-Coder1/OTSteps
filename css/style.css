@@ -238,6 +238,129 @@ footer a:hover {
 .section-title { text-align: center; }
 .card h3 { margin-bottom: 8px; }
 
+.help { padding: 80px 0; }
+.chips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 40px;
+}
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  background: white;
+  border: 1px solid #dde5ee;
+  border-radius: 999px;
+}
+
+.steps { background: var(--sky); padding: 80px 0; }
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+  text-align: center;
+}
+.step-number {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: var(--navy);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.step h3 { margin-bottom: 8px; }
+
+.values { padding: 80px 0; }
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+  text-align: center;
+}
+.value {
+  background: white;
+  padding: 24px 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.page-hero { background: var(--sky); padding: 60px 0; text-align: center; }
+.page-hero h1 { margin-bottom: 8px; font-size: clamp(2rem, 5vw, 3rem); }
+
+.service-block { padding: 60px 0; }
+.service-block.alt { background: var(--sky); }
+.service-block h2 { margin-bottom: 16px; }
+.service-block p { max-width: 70ch; margin-bottom: 12px; }
+
+.cta-band { background: var(--navy); color: white; text-align: center; padding: 60px 0; }
+.cta-band h2 { color: white; margin-bottom: 8px; }
+.cta-band p { margin-bottom: 20px; }
+
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 20px; }
+
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.contact-grid h3 { margin: 20px 0 6px; }
+
+.link-list { list-style: none; padding: 0; margin-top: 8px; }
+.link-list li { margin-bottom: 8px; }
+.link-list a { color: var(--navy); text-decoration: underline; }
+.link-list a:hover { color: var(--orange); }
+
+.enquiry-form { display: flex; flex-direction: column; gap: 6px; }
+.enquiry-form label { font-weight: 600; margin-top: 10px; }
+.enquiry-form input,
+.enquiry-form textarea {
+  padding: 12px;
+  border: 2px solid #c9d4e2;
+  border-radius: 10px;
+  font: inherit;
+  width: 100%;
+}
+.enquiry-form input:focus,
+.enquiry-form textarea:focus { outline: 3px solid var(--orange); border-color: var(--navy); }
+.form-note { font-size: 0.9rem; margin: 12px 0; }
+.enquiry-form button { align-self: flex-start; border: none; }
+.hp { position: absolute; left: -9999px; }
+
+.areas { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 24px; }
+.areas li { background: white; border: 1px solid #dde5ee; border-radius: 999px; padding: 8px 16px; }
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 2px solid var(--navy);
+  border-radius: 10px;
+  padding: 6px 14px;
+  font: inherit;
+  color: var(--navy);
+  cursor: pointer;
+}
+
+
+.form-success:not(:empty),
+.form-error:not(:empty) {
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.form-success:not(:empty) { background: #e6f4ea; color: #1e5b2f; }
+.form-error:not(:empty) { background: #fdecea; color: #8a1f17; }
+.field-error { color: #8a1f17; font-size: 0.9rem; }
+.enquiry-form input[aria-invalid="true"],
+.enquiry-form textarea[aria-invalid="true"] { border-color: #8a1f17; }
+
 @media (max-width: 768px) {
   .footer-grid {
     grid-template-columns: 1fr;
@@ -256,4 +379,15 @@ footer a:hover {
   .what-grid {
     grid-template-columns: 1fr;
   }
+
+  .two-col, .contact-grid { 
+    grid-template-columns: 1fr; 
+  }
+
+  header { flex-wrap: wrap; justify-content: space-between; }
+.menu-toggle { display: block; }
+.middle { display: none; width: 100%; order: 3; }
+.middle.open { display: block; }
+header ul { flex-direction: column; gap: 0; padding: 0; }
+header ul a { display: block; padding: 12px 0; border-top: 1px solid #e3e8ef; }
 }
