@@ -361,6 +361,16 @@ section[id] { scroll-margin-top: 20px; }
 .enquiry-form input[aria-invalid="true"],
 .enquiry-form textarea[aria-invalid="true"] { border-color: #8a1f17; }
 
+.contact { display: flex; align-items: center; gap: 8px; }
+
+.hero-image,
+.section-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
 @media (max-width: 768px) {
   .footer-grid {
     grid-template-columns: 1fr;
@@ -368,12 +378,6 @@ section[id] { scroll-margin-top: 20px; }
 
   .hero-grid {
     grid-template-columns: 1fr;
-  }
-
-  header {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
   }
 
   .what-grid {
